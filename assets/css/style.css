@@ -1,38 +1,39 @@
 /* aspectos generales del cuerpo */
 body {
     display: flexbox;
-    justify-content: end;/* Alinea el nav a la derecha */
-    margin: 0;
-    height: 100vh;
+    justify-content: end;
+    width: 100%;
 }
 /* Inicio de estilo header */
-header{
+.header__logo{
+    width: 100%;
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
-    justify-content: space-between; /* Espacia los elementos */
-    padding: 20px;;
-    background-color: #f8f8f8;   
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px;
+    background-color:red; /* #f8f8f8 */   
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 1.5em;
 }
 
-header img{
+.header__logo img{
     background-color: transparent;
     width: 100px;
     height: auto;
     border-radius: 50%;
     margin-top: 10px;
-
 }
-/* Estilos para el nav */
-nav a {
+
+/* Star Nav */
+.nav__contenedor a {
     color:black;
     padding: 1em;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-
+    text-align: center
 }
+
 header button{
     display: inline-block;
     padding: 10px 20px;
@@ -47,10 +48,15 @@ header button{
 header .boton:hover {
     background-color: #0056b3;
 }
+/* Start Banner del Home  */
+#banner__principal{
+    background-color: red;
+}
 #bannerprincipal img{
     width: 100%;
     height: auto;
-}
+} 
+
 #bannerprincipal H1{
     position: absolute;
     top: 65%;
@@ -170,15 +176,18 @@ header .boton:hover {
     text-align: center;
 }
 
+
 /* Segunda section Testimonios pacientes*/
-.seccion-columnas {
-    /* permite colocar las columnas una al lado de la */
-    margin-top: 30px
-}
-.seccion-columnas h2{
-    font-family: 'Arial', sans-serif;
-    font-size: 2em;
+.colums {
+   
+    margin-top: 10px;
+    background-color: red;
+    padding: 20px;   
+}      
+/* Titulo de section */
+.colums h2{
     color: #333;
+    font-size: 2em;
     text-align: center;
     margin: 20px 0;
     padding: 10px;
@@ -187,20 +196,21 @@ header .boton:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     letter-spacing: 1px;
-    
-}
-.contenedor-columnas{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    width: 50%;
-    
-    
-    
 }
 
-.testimonio{
-    background-color: #f0f0f0;
+/* Con estas propiedades las columnas se encuentran una a lado de la otra */
+.columns__contenedor{
+    background-color: black;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 100%;  
+}
+
+/* Div que contiene la imagenes de los testimonios */
+.colums__testimonio{
+    /*  */
+    background-color: #f0f0f0 ;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
@@ -208,12 +218,24 @@ header .boton:hover {
     flex: 1 1 calc(16.66% - 20px);
 }
 
-.testimonio img{
+.colums__testimonio img {
     padding: 5px;
     border-radius: 15px;
-    width: 10%;
+    width: 65%;
     height: auto;
 }
+
+.colums__testimonio p{
+    font-style: italic;
+    font-size: larger;
+}
+
+
+
+
+
+
+
 
 /* Inicio de footer */
 footer {
@@ -221,6 +243,7 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+    margin-top: 10px;
 }
 
 /* Estilos para el contenido del footer */

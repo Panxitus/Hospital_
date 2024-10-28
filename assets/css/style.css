@@ -78,7 +78,6 @@ header .boton:hover {
 .banner__principal img{
     width: 100%;
     height: auto; 
-    
 } 
 
 .banner__principal H1{
@@ -111,46 +110,80 @@ header .boton:hover {
 }
 
 .banner__principal__info p{
-    font-family: 'Arial', sans-serif; /* Fuente del texto */
-    font-size: 16px; /* Tamaño de la fuente */
-    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
-    color: #333; /* Color del texto */
-    margin: 20px 0; /* Margen superior e inferior */
-    padding: 10px; /* Espaciado interno */
-    background-color: #f9f9f9; /* Color de fondo */
-    border: 1px solid #ddd; /* Borde del párrafo */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    line-height: 1.5;
+    color: #333; 
+    margin: 20px 0; 
+    padding: 10px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px;     
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 /* Final section Banner del Home  */
 
 
 /* Inicio de section servicios del hospital */
-
 .servicios {
+    width: 100%;
+    height: auto; 
     display: flex;
     flex-direction: row; 
-    justify-content: space-between; 
-    
+    justify-content: space-between;    
 }
+
 .servicios__column {
     flex: 1; 
     padding: 20px; 
     box-sizing: border-box; 
     background-color: #f0f0f0; 
-    margin: 10px; 
+    margin: 10px;
     transition: background-color 0.3s ease;
 }
+
+.servicios__column img{
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.servicios__column h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicios__column p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    
 
 .servicios:hover {
     background-color: #d1e7dd; 
 }
 /* Final de section servicios del hospital */
 
+
+
 /* Inicio section Testimonios pacientes*/
 .colums {
     margin-top: 10px;
-    background-color: red;
     padding: 20px;   
 }      
 /* Titulo de section */
@@ -169,7 +202,6 @@ header .boton:hover {
 
 /* Con estas propiedades las columnas se encuentran una a lado de la otra */
 .columns__contenedor{
-    background-color: black;
     display:flex;
     flex-wrap: wrap;
     gap: 100px;

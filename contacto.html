@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Equipo Médico</title>
+    <title>Contacto</title>
 </head>
 <body>
+    
+<!-- inicio de header -->
     <header>
         <div class="header__logo">
             <img src="assets/img/LogoHospital.png" alt="Logo de la Empresa"> 
@@ -20,41 +22,29 @@
             <button type="button" class="boton">Reservar Citas </button>
         </div>
     </header>
+     
+<!-- Final de header -->
+<!-- Inicio Section -->
+<section class="formulario">
+    <h1>Formulario de Contacto</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-    <!--inicio lista de equipo médico  -->
-    <section>
-        <div class="equipo">
-        
-            <div class="equipomedico">
-                <img src="assets/img/doctor1.jpeg" alt="doctor1">
-                <h2>Felipe González </h2>
-                <h2>Cardiología</h2>
-                <p>Médico Cirujano, Universidad Nacional De Cordoba, Argentina</p>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
 
-            </div>
-            <div class="equipomedico">
-                <img src="assets/img/doctor2.jpeg" alt="doctor2">
-                <h2>Nicole Abarca</h2>
-                <h2>Medicina General</h2>
-                <p>Médico General, Universidad de Chile, Chile</p>
-            </div>
-            <div class="equipomedico">
-                <img src="assets/img/doctor3.jpeg" alt="doctor3">
-                <h2>Karina Palma </h2>
-                <h2>Kinesiología</h2>
-                <p>Kinesiologa, Universidad Católica de Chile, Chile</p>
-            </div>
-            <div class="equipomedico">
-                <img src="assets/img/doctor4.jpeg" alt="doctor4">
-                <h2>Ximena Torres</h2>
-                <h2>Urgencias</h2>
-                <p>Médico de Urgencia, Jefe de unidad, Universidad de Chile, Chile</p>
-            </div>
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
 
-    </section>
-    <!--Fin lista de equipo médico  -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-    <!-- inicio de footer -->
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+<!-- Final Section -->
+<!-- inicio de footer -->
     <footer>
         <div class="footer-contenido">
             <div class="footer-seccion">

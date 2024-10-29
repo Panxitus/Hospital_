@@ -210,7 +210,6 @@ header .boton:hover {
 
 /* Div que contiene la imagenes de los testimonios */
 .colums__testimonio{
-    /*  */
     background-color: #f0f0f0 ;
     padding: 20px;
     box-sizing: border-box;
@@ -231,14 +230,8 @@ header .boton:hover {
     font-size: larger;
 }
 
-
-
-
-
-
-
-
 /* Inicio de footer */
+
 footer {
     background-color: #333;
     color: white;
@@ -281,5 +274,45 @@ footer {
     background-color: #222;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+/* Inicio página de equipo médico */
+
+.equipo {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    padding: 20px; 
+    overflow: hidden;
+}
+
+
+.equipomedico {
+    flex: 1; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background-color: #fff; 
+    margin: 10px; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+
+.equipomedico img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.cequipomedico h2 {
+    font-size: 1.5em; 
+    margin: 10px 0; 
+}
+
+.equipomedico p {
+    font-size: 1em; 
+    color: #666; 
 }
 

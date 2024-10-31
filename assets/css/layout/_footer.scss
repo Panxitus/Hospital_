@@ -1,0 +1,22 @@
+@use '../utils/variables' as *;
+
+footer{
+
+    background-color: $background-color;
+    color: $color;
+    padding: $padding;
+    text-align: $text-align;
+    margin-top: $margin-top;
+
+    &__contenido{
+        display: $display;
+        justify-content: $justify-content;  
+        flex-wrap: $flex-wrap;
+        padding: $padding
+
+    }
+
+
+
+}
+

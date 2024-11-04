@@ -1,12 +1,4 @@
+// utilización de modularizacion 
 
-//Importo las variables y atributos de otro modulos
-
-//archivo que se convierte en style.css
-
-@use '.../scss/layout/footer;'
-
-
-
-
-
+@use './layout/footer';
 

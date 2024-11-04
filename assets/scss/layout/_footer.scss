@@ -1,25 +1,17 @@
-
-//Esto se hace para buscar informacion de otra carpeta
-
+// llamada a variables
 @use '../utils/variables' as *;
 
-.footer__contenido{
-
-    background-color: $background-color;
-    color: $color;
-    padding: $padding;
-    text-align: $text-align;
-    margin-top: $margin-top;
-
-    &__seccion{
-        display: $display;
-        justify-content: $justify-content;  
-        flex-wrap: $flex-wrap;
-        padding: $padding
-
-    }
-
- 
-
+.footer{
+        display: $footer-display;
+        justify-content: $footer-justify-content;
+        flex-wrap: $footer-flex-wrap;
+        padding: $footer-padding;
+         
+  &__contenido{
+        display: $footer-display;
+        justify-content: $footer-justify-content; /* Espacia las secciones del footer */
+        flex-wrap: $footer-flex-wrap; /* Permite que las secciones se ajusten en pantallas pequeñas */
+        padding: $footer-padding;
+        }
 }
 

@@ -2,16 +2,47 @@
 @use '../utils/variables' as *;
 
 .footer{
-        display: $footer-display;
-        justify-content: $footer-justify-content;
-        flex-wrap: $footer-flex-wrap;
-        padding: $footer-padding;
-         
-  &__contenido{
-        display: $footer-display;
-        justify-content: $footer-justify-content; /* Espacia las secciones del footer */
-        flex-wrap: $footer-flex-wrap; /* Permite que las secciones se ajusten en pantallas pequeñas */
-        padding: $footer-padding;
+    background-color: $footer-background-color;
+    color: $footer-text-color;
+    padding: $footer-padding;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__column {
+        width: $footer-column-width;
+    }
+
+    &__title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+    
+    &__text {
+        font-size: 1em;
+        margin-bottom: 10px;
+      }
+    
+    &__list {
+        list-style: none;
+        padding: 0;
+      }
+
+    &__item {
+          margin-bottom: 5px;
         }
+    
+    &__link {
+        color: $footer-text-color;
+        text-decoration: none;
+    }
+         
+    &__link a{
+
+        color:$footer-text-color;
+    }
+    &:hover {
+            text-decoration: underline;
+          } 
 }
 

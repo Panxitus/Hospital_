@@ -14,3 +14,8 @@ Las caracteristicas a mejorar son:
 3. Aplicación del modelo de cajas 
 4. Implementación de layoout adaptativo.
 
+Descripción de la modularización 
+
+Se utiliza la arquitectura 7-1 para que los modulos que componen el sitio web sean más específicos. Esto se logra separando los componentes en partes. 
+
+

@@ -1,6 +1,9 @@
+
+//Esto se hace para buscar informacion de otra carpeta
+
 @use '../utils/variables' as *;
 
-footer{
+.footer__contenido{
 
     background-color: $background-color;
     color: $color;
@@ -8,7 +11,7 @@ footer{
     text-align: $text-align;
     margin-top: $margin-top;
 
-    &__contenido{
+    &__seccion{
         display: $display;
         justify-content: $justify-content;  
         flex-wrap: $flex-wrap;
@@ -16,7 +19,7 @@ footer{
 
     }
 
-
+ 
 
 }
 

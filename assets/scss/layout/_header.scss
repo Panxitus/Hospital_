@@ -1,17 +1,16 @@
-@use '../utils/variables' as *;
+@use '../utils/variables'  as *;
 
 .header{
-    display: $header-display;
-    flex-direction: $header-flex-direction; 
-    align-items:$header-align-items; 
-    justify-content:$header-justify-content ; 
-    color:$header-color; 
-    padding:$header-padding; 
-    box-shadow:$header-box-shadow ; 
+    background-color: $header-primary-color;
+    font-family:$header-font-stack ;
+    color: white;
+    padding: 20px;
+    @use flex-center;
+    justify-content: space-between;
 
     &__logo
     logo{
-        width: 100px;  
+        width: 100%;  
         justify-content: space-between; 
         padding: 10px;   
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -34,7 +33,6 @@
         font-weight: bold;
         margin: 0 15px;
         color:black;
-
     }
 
 }

@@ -16,6 +16,5 @@ Las caracteristicas a mejorar son:
 
 Descripción de la modularización 
 
-Se utiliza la arquitectura 7-1 para que los modulos que componen el sitio web sean más específicos. Esto se logra separando los componentes en partes. 
-
+Se utiliza la arquitectura 7-1 utilizando la documentación oficial de Sass https://sass-guidelin.es/es/#arquitectura donde se definen las carpetas y los archivos de la apliación. Esta estructura nos permite tener una mayor versatiliad para realizar de los cambios necesarios. 
 

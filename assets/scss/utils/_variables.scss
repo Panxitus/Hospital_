@@ -1,16 +1,16 @@
     // Estas variables son globales/
     
     //variables del header
-    $header-display: flex; 
-    $header-flex-direction: column; 
-    $header-align-items: center; 
-    $header-justify-content: center; 
-    $header-color: white; 
-    $header-padding: 20px; 
-    $header-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+    $primary-color: #3498db;
+    $secondary-color: #2ecc71;
+    $font-stack: 'Arial, sans-serif';
+
+
+    // Variables de grid
     
-     // Variables de grid
-    
+
+
     // varables de footer 
     $footer-background-color: #333;
     $footer-text-color: #fff;

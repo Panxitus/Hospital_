@@ -8,26 +8,37 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="assets/img/LogoHospital.png" alt="Logo de la Empresa"> 
-        </div>
-        <div class="header__nav">
-            <nav class="header__opciones--a">
-                <a href="#inicio">Inicio</a>
-                <a href="equipo.html">Equipo Medico</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <button type="button" class="boton">Reservar Citas </button>
-        </div>
-    </header>
 
-<!-- Start de Banner  -->
+<!--Inicio de header  -->
+
+    <header class="header">
+        <div class="header__column header__column--logo">
+            <img src="assets/img/LogoHospital.png" alt="Logo" class="header__logo-image">
+        </div>
+        <div class="header__column header__column--nav">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Inicio</a></li>
+                    <li class="header__nav-item"><a href="equipo.html" class="header__nav-link">Equipo médico</a></li>
+                    <li class="header__nav-item"><a href="contacto.html" class="header__nav-link">Contacto</a></li>
+                </ul>
+             </nav>
+        </div>
+        <div class="header__column header__column--button">
+            <button class="header__button">Reservar Citas</button>
+         </div>
+    </header>
+    <!-- Start de Banner  -->
     <section class="banner">
-        <div class="bannerprincipal_contendor">
+        <section class="banner">
+            <img src="assets/img/banner.avif" alt="Banner Image" class="banner__image">
+            <h1 class="banner__title">Hospital San Clemente</h1>
+        </section>
+
+        <!-- <div class="bannerprincipal_contendor">
             <img src="assets/img/banner.avif">
             <h1>HOSPITAL SAN CLEMENTE</h1>
-        </div>
+        </div> -->
         <div class="bannerinfo">
             <div class="__mision">
                 <h2>Misión</h2>
@@ -40,8 +51,8 @@
         </div>
     </section>
 
-<!-- End Banner -->
-
+    <!-- End Banner -->
+ <!--Final de header  -->
 
 <!-- Inicio  section de servicio del hospital -->
     <section class="servicios">

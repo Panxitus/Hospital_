@@ -1,18 +1,133 @@
-/* Error: This at-rule is not allowed here.
- *   ,
- * 8 |     @use flex-center;
- *   |     ^^^^^^^^^^^^^^^^
- *   '
- *   scss\layout\_header.scss 8:5  @use
- *   scss\main.scss 6:1            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: This at-rule is not allowed here.\a   \2577 \a 8 \2502      @use flex-center;\d\a   \2502      ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 8:5  @use\a   scss\\main.scss 6:1            root stylesheet";
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
+.footer__column {
+  width: 30%;
+}
+.footer__title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.footer__text {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+.footer__item {
+  margin-bottom: 5px;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__link a {
+  color: #fff;
+}
+.footer:hover {
+  text-decoration: underline;
+}
+
+.header {
+  background-color: white;
+  color: #3498db;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__column--logo {
+  justify-content: flex-start;
+}
+.header__column--nav {
+  justify-content: center;
+}
+.header__column--button {
+  justify-content: flex-end;
+}
+.header__logo-image {
+  max-width: 100px;
+}
+.header__nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.header__nav-item-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+.header__nav-item-link:hover {
+  color: #2ecc71;
+}
+.header__button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.header__button:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+
+.banner__image {
+  width: 100%;
+  object-fit: cover;
+}
+.banner__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  gap: 20px;
+  flex: 1;
+}
+
+.bannerinfo h2 {
+  font-style: italic;
+  font-size: xx-large;
+  text-align: center;
+  color: red;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerinfo p {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=main.css.map */

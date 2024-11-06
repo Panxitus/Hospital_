@@ -1,5 +1,5 @@
 # Hospital_
-Proyecto dos, actualización y mejoras del proyecto inicial denominado "Hospital".
+Escalamiento del Proyecto Hospital, actualización y mejoras del proyecto inicial denominado "Hospital".
 
 
 Objetivo: 

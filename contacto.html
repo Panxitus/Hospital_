@@ -26,51 +26,53 @@
         <button class="header__button">Reservar Citas</button>
     </div>
 </header>
-     
 <!-- Final de header -->
-<!-- Inicio Section -->
-<section class="formulario">
-    <h1>Formulario de Contacto</h1>
-    <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
 
-        <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
-
-        <label for="asunto">Asunto:</label>
-        <input type="text" id="asunto" name="asunto" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
+<!-- Inicio Section  Formulario-->
+<section class="contact">
+    <form class="contact__form">
+      <div class="contact__group">
+        <label for="name" class="contact__label">Nombre</label>
+        <input type="text" id="name" class="contact__input" name="name" required>
+      </div>
+      <div class="contact__group">
+        <label for="email" class="contact__label">Correo</label>
+        <input type="email" id="email" class="contact__input" name="email" required>
+      </div>
+      <div class="contact__group">
+        <label for="subject" class="contact__label">Asunto</label>
+        <input type="text" id="subject" class="contact__input" name="subject" required>
+      </div>
+      <div class="contact__group">
+        <label for="message" class="contact__label">Mensaje</label>
+        <textarea id="message" class="contact__input contact__input--textarea" name="message" required></textarea>
+      </div>
+      <button type="submit" class="contact__button">Enviar</button>
     </form>
-</section>
+  </section>
 <!-- Final Section -->
+
+
 <!-- inicio de footer -->
-    <footer>
-        <div class="footer-contenido">
-            <div class="footer-seccion">
-                <h3>Sobre Nosotros</h3>
-                <p>Somos una empresa dedicada a ofrecer los mejores servicios.</p>
-            </div>
-            <div class="footer-seccion">
-                <h3>Contacto</h3>
-                <p>Email: contacto@ejemplo.com</p>
-                <p>Teléfono: +123 456 7890</p>
-            </div>
-            <div class="footer-seccion">
-                <h3>Síguenos</h3>
-                <p><a href="#">Facebook</a></p>
-                <p><a href="#">Twitter</a></p>
-                <p><a href="#">Instagram</a></p>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>&copy; 2024 FG webdesign. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="footer__column footer__column--about">
+      <h3 class="footer__title">Sobre Nosotros</h3>
+      <p class="footer__text">Somos una Institución comprometida con la salud del País.</p>
+    </div>
+    <div class="footer__column footer__column--links">
+      <h3 class="footer__title">Accesos Directos</h3>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Services</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__column footer__column--contact">
+      <h3 class="footer__title">Contactenos</h3>
+      <p class="footer__text">Email: info@HOSPITAL.com</p>
+      <p class="footer__text">Phone: +56 9 12345678</p>
+    </div>
+  </footer>
 <!-- Fin de footer -->
 </body>
 </html>

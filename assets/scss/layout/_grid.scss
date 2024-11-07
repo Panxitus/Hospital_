@@ -34,17 +34,5 @@
           flex: 1 1 100%;
         }
     }
-
-    @media (max-width: 768px) {
-        .section__column {
-          flex: 1 1 calc(50% - 20px);
-        }
-      }
-      
-      @media (max-width: 480px) {
-        .section__column {
-          flex: 1 1 100%;
-        }
-    }
 }
 

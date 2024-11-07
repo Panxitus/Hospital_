@@ -59,7 +59,7 @@
         padding: 10px 20px;
         cursor: pointer;
         &:hover {
-            background-color: darken($secondary-color, 10%);
+            background-color:black ($secondary-color, 10%);
         }
     }
 }

@@ -92,7 +92,7 @@
   cursor: pointer;
 }
 .header__button:hover {
-  background-color: rgb(36.616, 162.384, 89.948);
+  background-color: black #2ecc71, 10%;
 }
 
 .banner__image {
@@ -171,16 +171,6 @@
     flex: 1 1 100%;
   }
 }
-@media (max-width: 768px) {
-  .columns .section__column {
-    flex: 1 1 calc(50% - 20px);
-  }
-}
-@media (max-width: 480px) {
-  .columns .section__column {
-    flex: 1 1 100%;
-  }
-}
 
 .contact {
   border: 2px solid #000;
@@ -226,42 +216,13 @@
   background-color: #0056b3;
 }
 
-.section {
-  display: flex;
-  justify-content: space-between;
-}
-.section__column {
-  border: 1px solid blue;
-  padding: 10px;
-  flex: 1;
-  margin: 0 10px;
-  text-align: center;
-}
-.section__column:first-child {
-  margin-left: 0;
-}
-.section__column:last-child {
-  margin-right: 0;
-}
-.section__image {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-.section__title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-.section__text {
-  font-size: 1em;
-}
 @media (max-width: 768px) {
-  .section .section__column {
+  .section__column {
     flex: 1 1 calc(50% - 20px);
   }
 }
 @media (max-width: 480px) {
-  .section .section__column {
+  .section__column {
     flex: 1 1 100%;
   }
 }
